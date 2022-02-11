@@ -1,0 +1,41 @@
+.table{
+    margin:  0 auto;
+}
+
+.link {
+    text-decoration: none;
+}
+.tableItem{
+    border: 1px solid black;
+    padding: 15px 0;
+    text-align: center;
+}
+.sortBtn{
+    display: none;
+}
+.title{
+    display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+@media (max-width: 440px) {
+    .tableItem:nth-child(1){
+        display: none;
+    }
+    .tableItem:nth-child(3){
+        display: none;
+    }
+    .sortBtn{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+}
+.nextPage{
+    height: 30px;
+}
+
